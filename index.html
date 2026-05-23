@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>张德华 | Zhang Dehua</title>
+    <meta
+      name="description"
+      content="张德华，华中师范大学计算机科学与技术本科生，关注多模态智能、边缘计算、AIoT 与机器人系统。"
+    />
+    <meta property="og:title" content="张德华 | Zhang Dehua" />
+    <meta
+      property="og:description"
+      content="Computer Science undergraduate at Central China Normal University. Research and projects in multimodal AI, AIoT, edge intelligence, and robotics."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/system-overview.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Back to top">张德华</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Computer Science Undergraduate · Central China Normal University</p>
+          <h1 id="hero-title">张德华<br /><span>Zhang Dehua</span></h1>
+          <p class="hero-copy">
+            I work across multimodal AI, AIoT edge devices, and robotics systems,
+            with hands-on experience from research prototypes to competition-ready hardware.
+          </p>
+          <div class="hero-actions" aria-label="Contact links">
+            <a href="mailto:1987261736@qq.com">Email</a>
+            <a href="https://github.com/zdh1356" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Profile summary">
+        <div class="container intro-grid">
+          <article class="fact">
+            <span>Education</span>
+            <strong>CCNU · Computer Science and Technology</strong>
+            <p>2023.09 - 2027.06 · GPA 3.6 / 4.0 · Major rank 6</p>
+          </article>
+          <article class="fact">
+            <span>Interests</span>
+            <strong>Multimodal AI · Edge Intelligence · Robotics</strong>
+            <p>LLM retrieval, OpenHarmony/LiteOS development, NearLink SLE, robot control.</p>
+          </article>
+          <article class="fact">
+            <span>Current Focus</span>
+            <strong>Reliable perception systems in real-world environments</strong>
+            <p>Building systems that connect models, sensors, communication links, and deployment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Research</p>
+            <h2 id="research-title">Selected Research Experience</h2>
+          </div>
+          <article class="feature-entry">
+            <div class="entry-meta">
+              <span>2026.02 - 2026.05</span>
+              <span>Video Moment Retrieval</span>
+            </div>
+            <div class="entry-body">
+              <h3>LLM-Based Zero-Shot Video Moment Retrieval with Selective Acoustic Anchoring</h3>
+              <p>
+                Built a zero-shot video moment retrieval workflow using LLM-assisted semantic understanding,
+                transcript/audio evidence, and selective acoustic anchoring to improve temporal localization
+                for queries whose visual content is semantically implicit.
+              </p>
+              <ul class="compact-list">
+                <li>Explored text and audio alignment signals for temporal moment retrieval.</li>
+                <li>Used acoustic cues to supplement visual-semantic retrieval under weak supervision.</li>
+                <li>Connected research work with competition experience in RoboCup-related projects.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2 id="projects-title">Engineering Projects</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-card-wide">
+              <img src="assets/system-overview.jpg" alt="Ascend Sentinel system overview" />
+              <div class="project-content">
+                <div class="entry-meta">
+                  <span>Huawei ICT Competition</span>
+                  <span>2026.03</span>
+                </div>
+                <h3>Ascend Sentinel: Multimodal Campus Safety Warning System</h3>
+                <p>
+                  Developed the audio modality of the perception terminal for a campus violence
+                  early-warning system based on audio, millimeter-wave radar, NearLink SLE,
+                  edge inference, and Huawei Cloud.
+                </p>
+                <ul class="compact-list">
+                  <li>Customized D02 NearLink board SDK development with OpenHarmony and LiteOS.</li>
+                  <li>Implemented and tested microphone acquisition, SLE transmission, and UART communication.</li>
+                  <li>Built two-board SLE data transfer and measured packet loss for link reliability.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/sensor-node.jpg" alt="AIoT perception terminal hardware" />
+              <div class="project-content">
+                <div class="entry-meta">
+                  <span>AIoT Terminal</span>
+                  <span>D02 · SLE · UART</span>
+                </div>
+                <h3>Edge Perception Terminal Development</h3>
+                <p>
+                  Worked close to the board-level development flow, including SDK compilation,
+                  firmware flashing, peripheral debugging, and sensor data transmission.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/app-preview.jpg" alt="Campus safety app preview" />
+              <div class="project-content">
+                <div class="entry-meta">
+                  <span>System Integration</span>
+                  <span>Cloud · App · Edge</span>
+                </div>
+                <h3>End-to-End Warning Workflow</h3>
+                <p>
+                  The complete solution connects perception terminals, edge inference,
+                  IoTDA routing, and a security-side application for alert handling and feedback.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card project-card-wide">
+              <img src="assets/edge-inference.jpg" alt="Edge inference terminal log" />
+              <div class="project-content">
+                <div class="entry-meta">
+                  <span>Chinese Robotics Competition / RoboCup China</span>
+                  <span>2025.10</span>
+                </div>
+                <h3>Humanoid Dance Robot Voice Interaction and Motion Control</h3>
+                <p>
+                  Participated in a five-member humanoid robot team and worked on motion tuning,
+                  sensor debugging, Raspberry Pi / Orange Pi control-side development, and servo
+                  controller protocol research.
+                </p>
+                <ul class="compact-list">
+                  <li>Implemented voice-triggered actions such as raising an arm and starting dance sequences.</li>
+                  <li>Studied the servo controller protocol and controlled servos through code-level instructions.</li>
+                  <li>Supported the team in winning the national final runner-up award in dance robot performance.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="awards" aria-labelledby="awards-title">
+        <div class="container two-column">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Awards</p>
+              <h2 id="awards-title">Selected Honors</h2>
+            </div>
+            <ol class="timeline">
+              <li>
+                <time>2025.10</time>
+                <strong>Chinese Robotics Competition and RoboCup China, Dance Robot Performance, National Final Runner-up</strong>
+              </li>
+              <li>
+                <time>2026.03</time>
+                <strong>Huawei ICT Competition China Innovation Track, National Final First Prize</strong>
+              </li>
+              <li>
+                <time>2025</time>
+                <strong>University-level Innovation and Entrepreneurship Training Program, Outstanding Project</strong>
+              </li>
+              <li>
+                <time>2024</time>
+                <strong>Bo Ya Technology Scholarship</strong>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="skills-panel" aria-labelledby="skills-title">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">Technical Stack</h2>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>C / C++</span>
+              <span>MindSpore</span>
+              <span>OpenHarmony</span>
+              <span>LiteOS</span>
+              <span>NearLink SLE</span>
+              <span>UART</span>
+              <span>Raspberry Pi</span>
+              <span>Orange Pi</span>
+              <span>Servo Control</span>
+              <span>Audio Processing</span>
+              <span>Robotics</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Open to research and graduate admission conversations.</h2>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:1987261736@qq.com">1987261736@qq.com</a>
+            <a href="https://github.com/zdh1356" target="_blank" rel="noreferrer">github.com/zdh1356</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> Zhang Dehua</span>
+      <span>Built with GitHub Pages</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
