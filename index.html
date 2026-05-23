@@ -6,241 +6,158 @@
     <title>张德华 | Zhang Dehua</title>
     <meta
       name="description"
-      content="张德华，华中师范大学计算机科学与技术本科生，关注多模态智能、边缘计算、AIoT 与机器人系统。"
+      content="张德华，华中师范大学计算机科学与技术本科生。研究兴趣包括多模态大模型、具身智能、AIoT 与机器人系统。"
     />
-    <meta property="og:title" content="张德华 | Zhang Dehua" />
-    <meta
-      property="og:description"
-      content="Computer Science undergraduate at Central China Normal University. Research and projects in multimodal AI, AIoT, edge intelligence, and robotics."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/system-overview.jpg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Back to top">张德华</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Computer Science Undergraduate · Central China Normal University</p>
-          <h1 id="hero-title">张德华<br /><span>Zhang Dehua</span></h1>
-          <p class="hero-copy">
-            I work across multimodal AI, AIoT edge devices, and robotics systems,
-            with hands-on experience from research prototypes to competition-ready hardware.
+    <div class="page">
+      <header class="profile-header">
+        <div>
+          <h1>张德华</h1>
+          <p class="subtitle">Zhang Dehua</p>
+          <p>
+            本科生，计算机科学与技术“智能基座”基础班<br />
+            华中师范大学计算机学院
           </p>
-          <div class="hero-actions" aria-label="Contact links">
-            <a href="mailto:1987261736@qq.com">Email</a>
-            <a href="https://github.com/zdh1356" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+          <p>
+            邮箱：<a href="mailto:hs1363603@mails.ccnu.edu.cn">hs1363603@mails.ccnu.edu.cn</a>
+            · GitHub：<a href="https://github.com/zdh1356">zdh1356</a>
+          </p>
         </div>
-      </section>
+      </header>
 
-      <section class="intro-band" aria-label="Profile summary">
-        <div class="container intro-grid">
-          <article class="fact">
-            <span>Education</span>
-            <strong>CCNU · Computer Science and Technology</strong>
-            <p>2023.09 - 2027.06 · GPA 3.6 / 4.0 · Major rank 6</p>
-          </article>
-          <article class="fact">
-            <span>Interests</span>
-            <strong>Multimodal AI · Edge Intelligence · Robotics</strong>
-            <p>LLM retrieval, OpenHarmony/LiteOS development, NearLink SLE, robot control.</p>
-          </article>
-          <article class="fact">
-            <span>Current Focus</span>
-            <strong>Reliable perception systems in real-world environments</strong>
-            <p>Building systems that connect models, sensors, communication links, and deployment.</p>
-          </article>
-        </div>
-      </section>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#about">个人简介</a>
+        <a href="#education">教育经历</a>
+        <a href="#research">科研经历</a>
+        <a href="#projects">项目经历</a>
+        <a href="#awards">荣誉奖项</a>
+        <a href="#skills">技能证书</a>
+      </nav>
 
-      <section class="section" id="research" aria-labelledby="research-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Research</p>
-            <h2 id="research-title">Selected Research Experience</h2>
+      <main>
+        <section id="about">
+          <h2>个人简介</h2>
+          <p>
+            我是华中师范大学计算机科学与技术专业本科生，目前正在准备推荐免试研究生申请。
+            我的兴趣方向包括多模态大模型、具身智能、AIoT 与机器人系统。过去的项目经历覆盖
+            视频片段检索、端侧音频感知与星闪通信、人形机器人动作控制等方向。
+          </p>
+        </section>
+
+        <section id="education">
+          <h2>教育经历</h2>
+          <div class="item">
+            <div class="item-title">
+              <strong>华中师范大学</strong>
+              <span>2023.09 - 2027.06</span>
+            </div>
+            <p>计算机科学与技术“智能基座”基础班，本科</p>
+            <ul>
+              <li>成绩：88.96 / 100，GPA：3.6 / 4.0</li>
+              <li>排名：6</li>
+              <li>
+                主要课程：面向对象程序设计、高级语言程序设计、高等数学、数据库原理、
+                计算机组成原理、计算机网络、数字逻辑、机器学习、自然语言处理等。
+              </li>
+            </ul>
           </div>
-          <article class="feature-entry">
-            <div class="entry-meta">
+        </section>
+
+        <section id="research">
+          <h2>科研经历</h2>
+          <div class="item">
+            <div class="item-title">
+              <strong>LLM-Based Zero-Shot Video Moment Retrieval with Selective Acoustic Anchoring</strong>
               <span>2026.02 - 2026.05</span>
-              <span>Video Moment Retrieval</span>
             </div>
-            <div class="entry-body">
-              <h3>LLM-Based Zero-Shot Video Moment Retrieval with Selective Acoustic Anchoring</h3>
-              <p>
-                Built a zero-shot video moment retrieval workflow using LLM-assisted semantic understanding,
-                transcript/audio evidence, and selective acoustic anchoring to improve temporal localization
-                for queries whose visual content is semantically implicit.
-              </p>
-              <ul class="compact-list">
-                <li>Explored text and audio alignment signals for temporal moment retrieval.</li>
-                <li>Used acoustic cues to supplement visual-semantic retrieval under weak supervision.</li>
-                <li>Connected research work with competition experience in RoboCup-related projects.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="projects" aria-labelledby="projects-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2 id="projects-title">Engineering Projects</h2>
-          </div>
-          <div class="project-grid">
-            <article class="project-card project-card-wide">
-              <img src="assets/system-overview.jpg" alt="Ascend Sentinel system overview" />
-              <div class="project-content">
-                <div class="entry-meta">
-                  <span>Huawei ICT Competition</span>
-                  <span>2026.03</span>
-                </div>
-                <h3>Ascend Sentinel: Multimodal Campus Safety Warning System</h3>
-                <p>
-                  Developed the audio modality of the perception terminal for a campus violence
-                  early-warning system based on audio, millimeter-wave radar, NearLink SLE,
-                  edge inference, and Huawei Cloud.
-                </p>
-                <ul class="compact-list">
-                  <li>Customized D02 NearLink board SDK development with OpenHarmony and LiteOS.</li>
-                  <li>Implemented and tested microphone acquisition, SLE transmission, and UART communication.</li>
-                  <li>Built two-board SLE data transfer and measured packet loss for link reliability.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/sensor-node.jpg" alt="AIoT perception terminal hardware" />
-              <div class="project-content">
-                <div class="entry-meta">
-                  <span>AIoT Terminal</span>
-                  <span>D02 · SLE · UART</span>
-                </div>
-                <h3>Edge Perception Terminal Development</h3>
-                <p>
-                  Worked close to the board-level development flow, including SDK compilation,
-                  firmware flashing, peripheral debugging, and sensor data transmission.
-                </p>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/app-preview.jpg" alt="Campus safety app preview" />
-              <div class="project-content">
-                <div class="entry-meta">
-                  <span>System Integration</span>
-                  <span>Cloud · App · Edge</span>
-                </div>
-                <h3>End-to-End Warning Workflow</h3>
-                <p>
-                  The complete solution connects perception terminals, edge inference,
-                  IoTDA routing, and a security-side application for alert handling and feedback.
-                </p>
-              </div>
-            </article>
-
-            <article class="project-card project-card-wide">
-              <img src="assets/edge-inference.jpg" alt="Edge inference terminal log" />
-              <div class="project-content">
-                <div class="entry-meta">
-                  <span>Chinese Robotics Competition / RoboCup China</span>
-                  <span>2025.10</span>
-                </div>
-                <h3>Humanoid Dance Robot Voice Interaction and Motion Control</h3>
-                <p>
-                  Participated in a five-member humanoid robot team and worked on motion tuning,
-                  sensor debugging, Raspberry Pi / Orange Pi control-side development, and servo
-                  controller protocol research.
-                </p>
-                <ul class="compact-list">
-                  <li>Implemented voice-triggered actions such as raising an arm and starting dance sequences.</li>
-                  <li>Studied the servo controller protocol and controlled servos through code-level instructions.</li>
-                  <li>Supported the team in winning the national final runner-up award in dance robot performance.</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="awards" aria-labelledby="awards-title">
-        <div class="container two-column">
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">Awards</p>
-              <h2 id="awards-title">Selected Honors</h2>
-            </div>
-            <ol class="timeline">
+            <p class="meta">独立作者；ICONIP（CCF-C）在投</p>
+            <ul>
               <li>
-                <time>2025.10</time>
-                <strong>Chinese Robotics Competition and RoboCup China, Dance Robot Performance, National Final Runner-up</strong>
+                针对 LLM-based zero-shot video moment retrieval 中字幕与视觉描述难以精确对齐动作边界的问题，
+                探索用事件伴随音频作为 temporal anchors 的视频片段定位方法。
               </li>
               <li>
-                <time>2026.03</time>
-                <strong>Huawei ICT Competition China Innovation Track, National Final First Prize</strong>
+                构建 training-free trimodal prompting pipeline，将 Whisper 字幕、Qwen2.5-VL 视觉描述和 AST 声学事件统一为时间戳文本证据，
+                并提出 selective acoustic anchoring 策略过滤持续背景声。
               </li>
               <li>
-                <time>2025</time>
-                <strong>University-level Innovation and Entrepreneurship Training Program, Outstanding Project</strong>
+                在 YouCook2 和 COIN 上分别提升 mIoU +1.92 / +2.57；进一步通过 Tri-noaudio、事件类型和 acoustic coverage 分析发现，
+                音频证据并非普遍有效，而是依赖事件质量、时间对齐和查询相关性。
               </li>
-              <li>
-                <time>2024</time>
-                <strong>Bo Ya Technology Scholarship</strong>
-              </li>
-            </ol>
+            </ul>
           </div>
+        </section>
 
-          <aside class="skills-panel" aria-labelledby="skills-title">
-            <p class="eyebrow">Skills</p>
-            <h2 id="skills-title">Technical Stack</h2>
-            <div class="skill-tags">
-              <span>Python</span>
-              <span>C / C++</span>
-              <span>MindSpore</span>
-              <span>OpenHarmony</span>
-              <span>LiteOS</span>
-              <span>NearLink SLE</span>
-              <span>UART</span>
-              <span>Raspberry Pi</span>
-              <span>Orange Pi</span>
-              <span>Servo Control</span>
-              <span>Audio Processing</span>
-              <span>Robotics</span>
+        <section id="projects">
+          <h2>项目经历</h2>
+          <div class="item">
+            <div class="item-title">
+              <strong>Ascend Sentinel 基于多模态感知的校园安全预警系统 | 华为 ICT 大赛创新赛</strong>
+              <span>2025.12 - 2026.03</span>
             </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="contact-band" id="contact" aria-labelledby="contact-title">
-        <div class="container contact-inner">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Open to research and graduate admission conversations.</h2>
+            <ul>
+              <li>
+                负责多模态校园安全预警系统中的端侧音频感知模块，基于 D02 星闪派进行
+                OpenHarmony / LiteOS SDK 定制开发，实现麦克风音频采集、SLE 星闪传输与 UART 串口通信。
+              </li>
+              <li>
+                搭建两块 D02 星闪派间的端侧数据传输链路，完成数据封装、编译烧录、板端调试及丢包率测试，
+                支撑系统实现“感知终端 - 边缘节点”的低时延数据传输。
+              </li>
+              <li>项目获第十届华为 ICT 大赛创新赛中国总决赛一等奖。</li>
+            </ul>
           </div>
-          <div class="contact-links">
-            <a href="mailto:1987261736@qq.com">1987261736@qq.com</a>
-            <a href="https://github.com/zdh1356" target="_blank" rel="noreferrer">github.com/zdh1356</a>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <span>© <span data-year></span> Zhang Dehua</span>
-      <span>Built with GitHub Pages</span>
-    </footer>
+          <div class="item">
+            <div class="item-title">
+              <strong>人形舞蹈机器人动作控制与语音交互系统 | 中国机器人大赛暨 RoboCup 机器人世界杯中国赛</strong>
+              <span>2025.05 - 2025.08</span>
+            </div>
+            <ul>
+              <li>
+                面向中国机器人大赛舞蹈机器人表演赛，参与 5 人人形舞蹈机器人系统开发，
+                负责舞蹈动作调试、传感器联调及树莓派 / 香橙派主控端开发。
+              </li>
+              <li>
+                编写语音识别、语音播报、灯带、显示屏等外设控制模块，实现语音指令解析与动作触发，
+                可根据“举左手”“开始舞蹈”等指令执行对应动作或预设舞蹈序列。
+              </li>
+              <li>
+                研究舵机控制板通信协议，基于协议指令直接控制舵机，实现多舵机角度调参、动作序列编排与姿态优化，
+                提升机器人动作稳定性与表演完成度。
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="awards">
+          <h2>荣誉奖项</h2>
+          <ul class="award-list">
+            <li><span>2025.10</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人表演赛（总决赛）亚军</li>
+            <li><span>2025.10</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人创意赛一等奖</li>
+            <li><span>2026.03</span> 第十届华为 ICT 大赛创新赛中国总决赛一等奖</li>
+            <li><span>2025</span> 大学生创新创业训练计划优秀结项</li>
+            <li><span>2024</span> 博雅科技奖学金</li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h2>技能 / 证书及其他</h2>
+          <ul>
+            <li>数学：高等数学（95）、线性代数（91.2）、离散数学（93.2）、概率统计（93）</li>
+            <li>证书：中级软件设计师</li>
+            <li>英语：CET-6，CET-4</li>
+            <li>技术：Python、C / C++、MindSpore、OpenHarmony、LiteOS、NearLink SLE、UART、树莓派 / 香橙派、舵机控制</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>© <span id="year"></span> Zhang Dehua. Last updated: 2026.05.</p>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>
