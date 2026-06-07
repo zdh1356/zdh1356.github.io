@@ -6,7 +6,7 @@
     <title>张德华 | Zhang Dehua</title>
     <meta
       name="description"
-      content="张德华，华中师范大学计算机科学与技术本科生。研究兴趣包括多模态大模型、具身智能、AIoT 与机器人系统。"
+      content="张德华，华中师范大学计算机科学与技术“智能基座”基地班本科生。研究兴趣包括多模态大模型、视频/空间理解、具身智能、多智能体协作与机器人决策。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -16,51 +16,40 @@
         <div>
           <h1>张德华</h1>
           <p class="subtitle">Zhang Dehua</p>
+          <p>华中师范大学 · 计算机科学与技术“智能基座”基地班 · 本科生</p>
           <p>
-            本科生，计算机科学与技术“智能基座”基础班<br />
-            华中师范大学计算机学院
-          </p>
-          <p>
-            邮箱：<a href="mailto:hs1363603@mails.ccnu.edu.cn">hs1363603@mails.ccnu.edu.cn</a>
-            · GitHub：<a href="https://github.com/zdh1356">zdh1356</a>
+            电话：19871985699 · 邮箱：<a href="mailto:hs1363603@mails.ccnu.edu.cn">hs1363603@mails.ccnu.edu.cn</a>
+            · 主页：<a href="https://zdh1356.github.io/">zdh1356.github.io</a>
           </p>
         </div>
       </header>
 
       <nav class="nav" aria-label="页面导航">
-        <a href="#about">个人简介</a>
         <a href="#education">教育经历</a>
         <a href="#research">科研经历</a>
         <a href="#projects">项目经历</a>
+        <a href="#skills">数学、证书、英语</a>
         <a href="#awards">荣誉奖项</a>
-        <a href="#skills">技能证书</a>
       </nav>
 
       <main>
-        <section id="about">
-          <h2>个人简介</h2>
-          <p>
-            我是华中师范大学计算机科学与技术专业大三本科生。
-            我的兴趣方向包括多模态大模型、具身智能、AIoT 与机器人系统。过去的项目经历覆盖
-            视频片段检索、端侧音频感知与星闪通信、人形机器人动作控制等方向。
-          </p>
-        </section>
-
         <section id="education">
           <h2>教育经历</h2>
           <div class="item">
             <div class="item-title">
-              <strong>华中师范大学</strong>
+              <strong>华中师范大学 211 双一流</strong>
               <span>2023.09 - 2027.06</span>
             </div>
-            <p>计算机科学与技术“智能基座”基础班，本科</p>
+            <p>计算机科学与技术“智能基座”基地班 本科</p>
             <ul>
-              <li>成绩：88.96 / 100，GPA：3.6 / 4.0</li>
-              <li>排名：6</li>
+              <li>学分绩：88.96 / 100 | 排名：14 / 163</li>
               <li>
-                主要课程：面向对象程序设计、高级语言程序设计、高等数学、数据库原理、
-                计算机组成原理、计算机网络、数字逻辑、机器学习、自然语言处理等。
+                主要课程：面向对象程序设计（92.6）、高级语言程序设计（90.4）、高等数学（95）、
+                计算机组成原理（89.1）、计算机网络（89.2）、数字逻辑（90.4）、机器学习（91.8）、
+                自然语言处理（90.8）等。
               </li>
+              <li>荣誉：校三好学生、博雅丹桂奖学金、校优秀共青团干部（学生）</li>
+              <li>研究兴趣：多模态大模型、视频/空间理解、具身智能、多智能体协作与机器人决策</li>
             </ul>
           </div>
         </section>
@@ -72,21 +61,21 @@
               <strong>LLM-Based Zero-Shot Video Moment Retrieval with Selective Acoustic Anchoring</strong>
               <span>2026.02 - 2026.05</span>
             </div>
-            <p class="meta">独立作者；ICONIP（CCF-C）在投</p>
             <ul>
               <li>
-                针对 LLM-based zero-shot video moment retrieval 中字幕与视觉描述难以精确对齐动作边界的问题，
-                探索用事件伴随音频作为 temporal anchors 的视频片段定位方法。
+                针对 Zero-Shot 视频时刻检索 (VMR) 中字幕-动作错位和视觉边界模糊问题，引入物理声学事件作为辅助时间锚点，
+                提出Selective Acoustic Anchoring思路，用于过滤持续背景声与查询无关音频。
               </li>
               <li>
-                构建 training-free trimodal prompting pipeline，将 Whisper 字幕、Qwen2.5-VL 视觉描述和 AST 声学事件统一为时间戳文本证据，
-                并提出 selective acoustic anchoring 策略过滤持续背景声。
+                独立设计并构建 Training-Free 三模态提示框架，将 Whisper 字幕、Qwen2.5-VL/CLIP 视觉描述、AST 声学事件统一为带时间戳的
+                文本证据，并设计规则过滤持续背景声与查询无关音频。
               </li>
               <li>
-                在 YouCook2 和 COIN 上分别提升 mIoU +1.92 / +2.57；进一步通过 Tri-noaudio、事件类型和 acoustic coverage 分析发现，
-                音频证据并非普遍有效，而是依赖事件质量、时间对齐和查询相关性。
+                在 YouCook2 和 COIN 数据集上进行实验，相比双模态 baseline 分别提升 mIoU +1.92 / +2.57，并通过去音频消融、
+                事件类型分析和 acoustic coverage 分析验证音频证据的适用条件。
               </li>
             </ul>
+            <p class="meta">贡献：第一作者 | ICONIP (CCF-C) 在投</p>
           </div>
         </section>
 
@@ -94,68 +83,72 @@
           <h2>项目经历</h2>
           <div class="item">
             <div class="item-title">
-              <strong>Ascend Sentinel 基于多模态感知的校园安全预警系统 | 华为 ICT 大赛创新赛</strong>
-              <span>2025.12 - 2026.03</span>
+              <strong>基于强化学习的多机械臂协作动作约束方法 | 课程项目</strong>
+              <span>2026.03 - 2026.06</span>
             </div>
             <ul>
               <li>
-                负责多模态校园安全预警系统中的端侧音频感知模块，基于 D02 星闪派进行
-                OpenHarmony / LiteOS SDK 定制开发，实现麦克风音频采集、SLE 星闪传输与 UART 串口通信。
+                面向 LLM 在多机械臂协作任务中易生成非法动作的问题，参与构建“合法性 mask + 强化学习策略选择”的高层决策框架，
+                将开放式动作生成约束为合法动作集合内的选择。
               </li>
               <li>
-                搭建两块 D02 星闪派间的端侧数据传输链路，完成数据封装、编译烧录、板端调试及丢包率测试，
-                支撑系统实现“感知终端 - 边缘节点”的低时延数据传输。
+                负责跨任务泛化实验，将 Sort 三机械臂分拣任务迁移到 Sweep 双机械臂清扫任务，重构动作词表、合法性规则与符号化环境，
+                并分析跨任务成功率、平均步数与训练效率。
               </li>
-              <li>项目获第十届华为 ICT 大赛创新赛中国总决赛一等奖。</li>
             </ul>
           </div>
 
           <div class="item">
             <div class="item-title">
-              <strong>人形舞蹈机器人动作控制与语音交互系统 | 中国机器人大赛暨 RoboCup 机器人世界杯中国赛</strong>
+              <strong>人形舞蹈机器人动作控制与语音交互系统</strong>
               <span>2025.05 - 2025.08</span>
             </div>
             <ul>
               <li>
-                面向中国机器人大赛舞蹈机器人表演赛，参与 5 人人形舞蹈机器人系统开发，
-                负责舞蹈动作调试、传感器联调及树莓派 / 香橙派主控端开发。
+                参与 5 人人形机器人系统开发，负责语音交互、动作调试、传感器联调及树莓派/香橙派主控板外设控制，
+                实现语音指令到动作序列触发的闭环。
               </li>
               <li>
-                编写语音识别、语音播报、灯带、显示屏等外设控制模块，实现语音指令解析与动作触发，
-                可根据“举左手”“开始舞蹈”等指令执行对应动作或预设舞蹈序列。
+                解析舵机控制板通信协议，完成多舵机角度调参、动作序列编排与姿态优化；团队获 2025 中国机器人大赛暨 RoboCup 中国赛表演赛
+                亚军。
               </li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-title">
+              <strong>Ascend Sentinel ——基于多模态感知的校园暴力智能干预系统</strong>
+              <span>2025.12 - 2026.03</span>
+            </div>
+            <ul>
               <li>
-                研究舵机控制板通信协议，基于协议指令直接控制舵机，实现多舵机角度调参、动作序列编排与姿态优化，
-                提升机器人动作稳定性与表演完成度。
+                负责端侧音频感知模块，完成 OpenHarmony/LiteOS 下的麦克风采集、SLE 星闪传输、UART 通信与板端调试，
+                支撑“感知终端-边缘节点”低时延传输；团队获华为 ICT 全国一等奖、全球二等奖。
               </li>
             </ul>
           </div>
         </section>
 
-        <section id="awards">
-          <h2>荣誉奖项</h2>
-          <ul class="award-list">
-            <li><span>2025.10</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人表演赛（总决赛）亚军</li>
-            <li><span>2025.10</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人创意赛二等奖</li>
-            <li><span>2026.03</span> 第十届华为 ICT 大赛创新赛中国总决赛一等奖</li>
-            <li><span>2025</span> 大学生创新创业训练计划B类优秀结项</li>
-            <li><span>2024</span> 博雅丹桂奖学金</li>
+        <section id="skills">
+          <h2>数学、证书、英语</h2>
+          <ul>
+            <li>数学：高等数学（95）、线性代数（91.2）、离散数学（93.2）、概率统计（93）</li>
+            <li>英语/证书：CET-4：556，CET-6：444，中级软件设计师</li>
           </ul>
         </section>
 
-        <section id="skills">
-          <h2>技能 / 证书及其他</h2>
-          <ul>
-            <li>数学：高等数学（95）、线性代数（91.2）、离散数学（93.2）、概率统计（93）</li>
-            <li>证书：中级软件设计师</li>
-            <li>英语：CET-6，CET-4</li>
-            <li>技术：Python、C / C++、MindSpore、OpenHarmony、LiteOS、NearLink SLE、UART、树莓派 / 香橙派、舵机控制</li>
+        <section id="awards">
+          <h2>荣誉奖项</h2>
+          <ul class="award-list">
+            <li><span>2025.11</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人表演赛（总决赛）亚军 | 创意赛一等奖</li>
+            <li><span>2026.6</span> 第十届华为 ICT 大赛创新赛中国总决赛一等奖 | 全球总决赛二等奖</li>
+            <li><span>2026.5</span> 第十九届中国大学生计算机设计大赛中南赛区一等奖</li>
           </ul>
         </section>
       </main>
 
       <footer>
-        <p>© <span id="year"></span> Zhang Dehua. Last updated: 2026.05.</p>
+        <p>© <span id="year"></span> Zhang Dehua. Last updated: 2026.06.</p>
       </footer>
     </div>
 
