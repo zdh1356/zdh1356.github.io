@@ -4,6 +4,7 @@
   --link: #1f5f99;
   --line: #ddd;
   --soft: #f7f7f7;
+  --soft-line: #eeeeee;
 }
 
 * {
@@ -66,7 +67,7 @@ a:hover {
 }
 
 section {
-  padding: 22px 0 2px;
+  padding: 24px 0 2px;
 }
 
 h2 {
@@ -74,6 +75,36 @@ h2 {
   padding-bottom: 5px;
   border-bottom: 1px solid var(--line);
   font-size: 23px;
+}
+
+.intro p {
+  max-width: 860px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  padding: 18px 0 6px;
+}
+
+.highlights div {
+  border-top: 2px solid var(--line);
+  padding: 10px 0 2px;
+}
+
+.highlights strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.highlights span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .item {
@@ -100,6 +131,10 @@ h2 {
   white-space: nowrap;
 }
 
+.compact p {
+  margin: 6px 0;
+}
+
 p {
   margin: 8px 0;
 }
@@ -120,10 +155,32 @@ li {
 
 .award-list li {
   display: grid;
-  grid-template-columns: 82px 1fr;
+  grid-template-columns: 92px 1fr;
   gap: 12px;
   padding: 6px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--soft-line);
+}
+
+.timeline {
+  border-left: 2px solid var(--line);
+  margin: 14px 0 4px;
+  padding-left: 16px;
+}
+
+.timeline div {
+  margin: 0 0 14px;
+}
+
+.timeline span {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.timeline strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 16px;
 }
 
 footer {
@@ -159,5 +216,15 @@ footer {
   .award-list li {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .highlights {
+    grid-template-columns: 1fr;
   }
 }

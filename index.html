@@ -25,46 +25,74 @@
       </header>
 
       <nav class="nav" aria-label="页面导航">
+        <a href="#profile">个人简介</a>
         <a href="#education">教育经历</a>
-        <a href="#research">科研经历</a>
-        <a href="#projects">项目经历</a>
-        <a href="#skills">数学、证书、英语</a>
-        <a href="#awards">荣誉奖项</a>
+        <a href="#research">科研</a>
+        <a href="#projects">项目</a>
+        <a href="#innovation">创新与专利</a>
+        <a href="#awards">竞赛荣誉</a>
+        <a href="#service">学生工作</a>
+        <a href="#skills">能力证书</a>
       </nav>
 
       <main>
+        <section id="profile" class="intro">
+          <h2>个人简介</h2>
+          <p>
+            我是华中师范大学计算机科学与技术“智能基座”基地班本科生，关注多模态大模型、视频/空间理解、具身智能、多智能体协作与机器人决策。
+            近期工作主要围绕视频时刻检索中的声学锚点、多模态校园安全感知终端、
+            人形机器人动作控制与多机械臂协作决策展开。
+          </p>
+        </section>
+
+        <section id="highlights" class="highlights" aria-label="成果概览">
+          <div>
+            <strong>发明专利进入实审</strong>
+            <span>非侵犯式多模态感知终端设备</span>
+          </div>
+          <div>
+            <strong>华为 ICT 全国一等奖 / 全球二等奖</strong>
+            <span>多模态校园暴力智能干预系统</span>
+          </div>
+          <div>
+            <strong>机器人赛总决赛亚军</strong>
+            <span>RoboCup 中国赛舞蹈机器人表演赛</span>
+          </div>
+          <div>
+            <strong>大创省级优秀结项</strong>
+            <span>机器人舞蹈自动编排系统</span>
+          </div>
+        </section>
+
         <section id="education">
           <h2>教育经历</h2>
-          <div class="item">
+          <div class="item compact">
             <div class="item-title">
               <strong>华中师范大学 211 双一流</strong>
               <span>2023.09 - 2027.06</span>
             </div>
-            <p>计算机科学与技术“智能基座”基地班 本科</p>
-            <ul>
-              <li>学分绩：88.96 / 100 | 排名：14 / 163</li>
-              <li>
-                主要课程：面向对象程序设计（92.6）、高级语言程序设计（90.4）、高等数学（95）、
-                计算机组成原理（89.1）、计算机网络（89.2）、数字逻辑（90.4）、机器学习（91.8）、
-                自然语言处理（90.8）等。
-              </li>
-              <li>荣誉：校三好学生、博雅丹桂奖学金、校优秀共青团干部（学生）</li>
-              <li>研究兴趣：多模态大模型、视频/空间理解、具身智能、多智能体协作与机器人决策</li>
-            </ul>
+            <p>计算机科学与技术“智能基座”基地班，本科</p>
+            <p>
+              学分绩：88.96 / 100 | 排名：14 / 163。主要课程包括面向对象程序设计（92.6）、高级语言程序设计（90.4）、
+              高等数学（95）、计算机组成原理（89.1）、计算机网络（89.2）、数字逻辑（90.4）、机器学习（91.8）、
+              自然语言处理（90.8）等。
+            </p>
+            <p>校内荣誉：校三好学生、博雅丹桂奖学金、校优秀共青团干部（学生）。</p>
           </div>
         </section>
 
         <section id="research">
-          <h2>科研经历</h2>
+          <h2>科研</h2>
           <div class="item">
             <div class="item-title">
               <strong>LLM-Based Zero-Shot Video Moment Retrieval with Selective Acoustic Anchoring</strong>
               <span>2026.02 - 2026.05</span>
             </div>
+            <p class="meta">贡献：第一作者 | ICONIP (CCF-C) 在投</p>
             <ul>
               <li>
                 针对 Zero-Shot 视频时刻检索 (VMR) 中字幕-动作错位和视觉边界模糊问题，引入物理声学事件作为辅助时间锚点，
-                提出Selective Acoustic Anchoring思路，用于过滤持续背景声与查询无关音频。
+                提出 Selective Acoustic Anchoring 思路，用于过滤持续背景声与查询无关音频。
               </li>
               <li>
                 独立设计并构建 Training-Free 三模态提示框架，将 Whisper 字幕、Qwen2.5-VL/CLIP 视觉描述、AST 声学事件统一为带时间戳的
@@ -75,12 +103,11 @@
                 事件类型分析和 acoustic coverage 分析验证音频证据的适用条件。
               </li>
             </ul>
-            <p class="meta">贡献：第一作者 | ICONIP (CCF-C) 在投</p>
           </div>
         </section>
 
         <section id="projects">
-          <h2>项目经历</h2>
+          <h2>项目</h2>
           <div class="item">
             <div class="item-title">
               <strong>基于强化学习的多机械臂协作动作约束方法 | 课程项目</strong>
@@ -109,8 +136,7 @@
                 实现语音指令到动作序列触发的闭环。
               </li>
               <li>
-                解析舵机控制板通信协议，完成多舵机角度调参、动作序列编排与姿态优化；团队获 2025 中国机器人大赛暨 RoboCup 中国赛表演赛
-                亚军。
+                解析舵机控制板通信协议，完成多舵机角度调参、动作序列编排与姿态优化；团队获 2025 中国机器人大赛暨 RoboCup 中国赛表演赛亚军。
               </li>
             </ul>
           </div>
@@ -129,20 +155,63 @@
           </div>
         </section>
 
-        <section id="skills">
-          <h2>数学、证书、英语</h2>
-          <ul>
-            <li>数学：高等数学（95）、线性代数（91.2）、离散数学（93.2）、概率统计（93）</li>
-            <li>英语/证书：CET-4：556，CET-6：444，中级软件设计师</li>
-          </ul>
+        <section id="innovation">
+          <h2>创新训练与专利</h2>
+          <div class="item">
+            <div class="item-title">
+              <strong>基于 Hugging Face Transformers 平台多模型协作与微调的机器人舞蹈自动编排系统</strong>
+              <span>2026.04</span>
+            </div>
+            <p>
+              华中师范大学大学生创新创业训练计划，项目级别：B级（省级）；项目优秀结项，准予结项。
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-title">
+              <strong>一种基于声音与匿名视觉模态的非侵犯式感知终端设备</strong>
+              <span>2026.03 - 2026.06</span>
+            </div>
+            <p>
+              发明专利，申请号：202610340180.0；发明人：张德华、胡一凡、秦熙明。该申请已公布并进入实质审查阶段。
+            </p>
+          </div>
         </section>
 
         <section id="awards">
-          <h2>荣誉奖项</h2>
+          <h2>竞赛与荣誉</h2>
           <ul class="award-list">
-            <li><span>2025.11</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人表演赛（总决赛）亚军 | 创意赛一等奖</li>
-            <li><span>2026.6</span> 第十届华为 ICT 大赛创新赛中国总决赛一等奖 | 全球总决赛二等奖</li>
-            <li><span>2026.5</span> 第十九届中国大学生计算机设计大赛中南赛区一等奖</li>
+            <li><span>2026.06</span> 第十届华为 ICT 大赛创新赛中国总决赛一等奖 | 全球总决赛二等奖</li>
+            <li><span>2026.05</span> 第十九届中国大学生计算机设计大赛中南赛区一等奖</li>
+            <li><span>2026.05</span> 一带一路暨金砖国家技能发展与技术创新大赛技术创新赛国内决赛二等奖</li>
+            <li><span>2025.11</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人表演赛（总决赛）亚军</li>
+            <li><span>2025.11</span> 2025 中国机器人大赛暨 RoboCup 机器人世界杯中国赛舞蹈机器人创意赛二等奖</li>
+            <li><span>2025</span> 博雅丹桂奖学金</li>
+            <li><span>2024</span> 博雅丹桂奖学金</li>
+            <li><span>2024</span> 校三好学生</li>
+            <li><span>2024</span> 校优秀共青团干部（学生）</li>
+          </ul>
+        </section>
+
+        <section id="service">
+          <h2>学生工作</h2>
+          <div class="timeline">
+            <div>
+              <span>2024.06 - 2025.06</span>
+              <strong>华中师范大学计算机学院团委融媒体中心负责人</strong>
+            </div>
+            <div>
+              <span>2023.09 - 2024.06</span>
+              <strong>华中师范大学计算机学院团委新媒体中心部委</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills">
+          <h2>能力证书</h2>
+          <ul>
+            <li>技术：Python、C / C++、MindSpore、OpenHarmony、LiteOS、NearLink SLE、UART、树莓派 / 香橙派、舵机控制。</li>
+            <li>英语/证书：CET-4：556，CET-6：444，中级软件设计师。</li>
+            <li>数学：高等数学（95）、线性代数（91.2）、离散数学（93.2）、概率统计（93）。</li>
           </ul>
         </section>
       </main>
